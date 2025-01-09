@@ -1,0 +1,47 @@
+[versions]
+agp = "8.1.1"
+org-jetbrains-kotlin-android = "1.9.22"
+org-jetbrains-kotlin-jvm = "1.9.22"
+coroutines = "1.7.0"
+rx-java = "2.2.20"
+rx-android = "2.1.1"
+exception = "1.0.1"
+retrofit = "2.11.0"
+loggingInterceptor = "3.1.0"
+realm = "1.16.0"
+serialization = "1.6.3"
+
+junit = "4.13.2"
+androidx-test = "1.6.1"
+junit-ktx = "1.2.1"
+coreKtx = "1.15.0"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+
+[libraries]
+exception = { group = "com.github.FabitMobile", name = "exception", version.ref = "exception" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+loggingInterceptor = { group = "com.github.ihsanbal", name = "LoggingInterceptor", version.ref = "loggingInterceptor" }
+realm = { group = "io.realm.kotlin", name = "library-base", version.ref = "realm" }
+
+test-junit = { group = "junit", name = "junit", version.ref = "junit" }
+test-runner = { group = "androidx.test", name = "runner", version.ref = "androidx-test" }
+test-rules = { group = "androidx.test", name = "rules", version.ref = "androidx-test" }
+test-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junit-ktx" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+io-realm-kotlin = { id = "io.realm.kotlin", version.ref = "realm" }
+org-jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin-jvm" }

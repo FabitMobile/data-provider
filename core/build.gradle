@@ -1,0 +1,16 @@
+plugins {
+    id("java")
+    id("kotlin")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation(libs.exception)
+    implementation(libs.coroutines)
+}
+
+apply from: "../kotlin_publish.gradle"
