@@ -8,7 +8,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.runBlocking
-import okhttp3.Authenticator
 import org.json.JSONObject
 import org.junit.Test
 import ru.fabit.dataprovider.remote.RemoteServiceConfig
@@ -17,7 +16,7 @@ import ru.fabit.dataprovider.remoteservice.factories.ClientFactory
 import ru.fabit.dataprovider.remoteservice.converter.JsonConverter.Companion.DEFAULT_KEY
 import ru.fabit.error.AuthFailureException
 import ru.fabit.error.RemoteServiceError
-import ru.fabit.remoteservicecoroutines.factories.RetrofitFactory
+import ru.fabit.dataprovider.remoteservice.factories.RetrofitFactory
 import kotlin.time.Duration.Companion.seconds
 
 class TestApi {

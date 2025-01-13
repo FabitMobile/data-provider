@@ -1,4 +1,4 @@
-package ru.fabit.remoteservicecoroutines.factories
+package ru.fabit.dataprovider.remoteservice.factories
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
